@@ -5,7 +5,7 @@ require('dotenv/config')
 
 const app = express()
 
-const DB = process.env.DB_URL
+const DB = 'mongodb+srv://riskiddin98:riskiddin98@cluster0.d5xmv.mongodb.net/Ramazan_taqvimbot'
 mongoose
     .connect(DB, {
         useNewUrlParser: true,
