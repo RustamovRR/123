@@ -3,7 +3,7 @@ const router = require('express').Router()
 const User = require('./models/users')
 
 router.get('/', async (req, res) => {
-    res.json('hello')
+    res.send('hello')
 })
 
 router.get('/api/bot', async (req, res) => {

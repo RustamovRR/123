@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "name": "Ramazan_taqvim_server",
     "version": "1.0.0",
     "description": "",
@@ -14,24 +13,7 @@
         "axios": "^0.21.1",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
-        "mongoose": "^5.11.18"
+        "mongoose": "^5.11.18",
+        "nodemon": "^2.0.7"
     }
-=======
-  "name": "Ramazan_taqvim_server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-      "start": "node app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-      "axios": "^0.21.1",
-      "dotenv": "^8.2.0",
-      "express": "^4.17.1",
-      "mongoose": "^5.11.18"
-  }
->>>>>>> eda04220e71267469054f41dbf03beee4130f2a4
 }
