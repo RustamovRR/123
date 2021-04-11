@@ -3,6 +3,10 @@ const router = require('express').Router()
 const User = require('./models/users')
 
 router.get('/', async (req, res) => {
+    res.json('hello')
+})
+
+router.get('/users', async (req, res) => {
     let users = await User.find()
     res.json(users)
 })
