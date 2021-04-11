@@ -2,12 +2,16 @@ const axios = require("axios");
 const router = require('express').Router()
 const User = require('./models/users')
 
-router.get('/bot/api', async (req, res) => {
+router.get('/', async (req, res) => {
+    res.json('hello')
+})
+
+router.get('/api/bot', async (req, res) => {
     let users = await User.find()
     res.json(users)
 })
 
-router.post('/bot/api', async (req, res) => {
+router.post('/api/bot', async (req, res) => {
     try {
         let user = new User({
             username: req.body.username,
@@ -23,7 +27,7 @@ router.post('/bot/api', async (req, res) => {
 
 })
 
-router.delete('/bot/api:id', async (req, res) => {
+router.delete('/api/bot/:id', async (req, res) => {
     let user = await User.findByIdAndDelete(req.params.id)
     res.json(user)
 })
